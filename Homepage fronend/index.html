@@ -8,103 +8,128 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container-fluid">
         <!-- Header -->
-        <div id="header" class="row">
-            <div id="header-logo" class="col-4">
-                <img id="logo" class="img-fluid" src="public\logo.png" alt="logo" />
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid m-0">
+                <div id="header-logo" class="col-4">
+                    <img id="logo" src="public\logo.png" alt="logo" />
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul id="header-list" class="nav nav-underline px-5">
+                        <li class="nav-item px-1">
+                            <a class="nav-link" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown px-1">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Option 1</a></li>
+                                <li><a class="dropdown-item" href="#">Option 2</a></li>
+                                <li><a class="dropdown-item" href="#">Option 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" href="#">Financing</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" aria-disabled="true">Membership</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" aria-disabled="true">Careers</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" aria-disabled="true">Contact</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a class="nav-link" aria-disabled="true">
+                                <img class="phone-logo" src="public\phone.png" alt="help" />
+                            </a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <button id="yellow-in-black" class="btn btn rounded-pill p-1" type="submit"><img
+                                    class="tick" src="public\tick.png" alt="tick" />
+                                Schedule Now
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div id="header-links" class="col-8">
-                <ul id="header-list" class="nav nav-underline">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                            aria-expanded="false">Services</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Option 1</a></li>
-                            <li><a class="dropdown-item" href="#">Option 2</a></li>
-                            <li><a class="dropdown-item" href="#">Option 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Financing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-disabled="true">Membership</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-disabled="true">Careers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-disabled="true">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-disabled="true">
-                            <img class="phone-logo" src="public\phone.png" alt="help" />
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <button id="yellow-in-black" class="btn btn-light rounded-pill" type="submit"><img class="tick"
-                                src="public\tick.png" alt="tick" />Schedule Now</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        </nav>
 
+
+        <div class="design">
+            <div id="d1">
+                <div id="s1-content-one">
+                    <h1 class="fw-bolder">Day or night,</h1>
+                </div>
+                <div style="margin-top: 220px; padding-left: 120px;">
+                    <p class="p-1 fw-medium">when emergencies strike, we restore<br />
+                        the comfort and safety to your home.</p>
+                    <div class="p-1">
+                        <button id="yellow-in-black" class="btn btn rounded-pill" type="submit">Non-Emergency
+                            Service</button>
+                        <button id="black-in-yellow" class="btn btn rounded-pill" type="submit">Emergency
+                            Service</button>
+                    </div><br />
+                    <p class="p-1 fw-bolder" style="margin-top: 20px;">Peace of Mind. Clear Options.
+                        <br>5-Star Service. Industry Leading Guarantees.
+                    </p>
+                </div>
+            </div>
+          <div id="image-h">
+            <img src="public\1S9A7314 1.png" alt="person-1" />
+          </div>
+        </div>
         <!-- Section-1 -->
-        <div id="section-1" class="row">
-            <div id="s1-content" class="col-md-6">
-                <h1 class="fw-bolder">Day or night,</h1>
-                <div class="blank"></div>
-                <p>when emergencies strike, we restore
-                    the comfort and safety to your home.</p>
+        <!-- <div id="section-1" class="row">
+            <div class="col-md-6">
+                <div id="s1-content">
+                    <h1 class="fw-bolder">Day or night,</h1>
+                </div>
                 <div>
-                    <button id="yellow-in-black" class="btn btn-light rounded-pill" type="submit">Non-Emergency
-                        Service</button>
-                    <button id="black-in-yellow" class="btn btn-light rounded-pill" type="submit">Emergency
-                        Service</button>
-                </div><br />
-                <p class="p2">Peace of Mind. Clear Options.
-                    <br>5-Star Service. Industry Leading Guarantees.
-                </p>
-                <p class="p3">SCROLL DOWN</p>
+                    <p class="p-1 fw-medium">when emergencies strike, we restore<br />
+                        the comfort and safety to your home.</p>
+                    <div class="p-1">
+                        <button id="yellow-in-black" class="btn btn rounded-pill" type="submit">Non-Emergency
+                            Service</button>
+                        <button id="black-in-yellow" class="btn btn rounded-pill" type="submit">Emergency
+                            Service</button>
+                    </div><br />
+                    <p class="p-1 fw-bolder">Peace of Mind. Clear Options.
+                        <br>5-Star Service. Industry Leading Guarantees.
+                    </p>
+                </div>
             </div>
             <div id="s1-graphics" class="col-md-6">
                 <img src="public\1S9A7314 1.png" alt="person-1" />
             </div>
-        </div>
+        </div> -->
+
+        <!-- Divider -->
+        <div style="width: 100%; margin: 5%;"></div>
 
         <!-- Section-2 -->
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="public/sec-2-bg.png" class="d-block w-100" alt="bg">
-                    <div class="carousel-caption d-none mb-5 py-5 d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                      </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="public/sec-2-bg.png" class="d-block w-100" alt="bg">
-                </div>
-                <div class="carousel-item">
-                    <img src="public/sec-2-bg.png" class="d-block w-100" alt="bg">
-                </div>
+        <div id="s2-r" class="row">
+            <div id="s2-c">
+                <p class="fs-2 fw-bolder w-50">Great service all around, very responsive, 
+                    professional, and thorough! Also cheerful 
+                    and helpful in a very stressful emergency situation.
+                </p>
+                <img src="public/a.png" alt="rating" />
+                <button id="black-in-yellow" class="btn btn rounded-pill">Learn More</button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
 
         <!-- Divider -->
@@ -135,8 +160,7 @@
 
         <!-- Section-4 -->
         <div id="s4-r" class="row">
-            <img src="public/sec-4.png" alt="Dark Image" class="img-fluid">
-            <div id="s4-c" class="text-overlay">
+            <div id="s4-c" class="">
                 <h1>What Drives Us?</h1>
                 <p>Super Service Today stands out by ensuring unparalleled professionalism and reliability through a
                     commitment to excellence.<br /><br />
@@ -154,10 +178,19 @@
             </div>
         </div>
 
+        <div id="vroom-r" class="row justify-content-end">
+            <div id="vroom" class="col-9">
+                <img src="public/vroom.png" alt="vroom beep" />
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div style="width: 100%; margin: 10%;"></div>
+
         <!-- Section-5 -->
         <h2 class="text-center m-4">Today's Offers</h2>
-        <div class="row">
-            <div class="col-md-6">
+        <div id="s5-r" class="row">
+            <div class="col-md-6 align-items-start">
                 <div id="offer-card" class="shadow-lg mx-4 p-2 col-9 rounded-3">
                     <div id="oc-1" class="bg-light d-flex px-2 py-4">
                         <div class="icon">
@@ -202,7 +235,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 align-items-end">
                 <div id="offer-card" class="shadow-lg mx-3 p-2 col-9 rounded-3">
                     <div id="oc-1" class="bg-light d-flex px-2 py-4">
                         <div class="icon">
@@ -247,7 +280,7 @@
                     </div>
                 </div>
             </div>
-            <button id="yellow-in-black" class="btn btn-secondary col-1 mx-50 fs-6 p-2">See All Offers</button>
+            <button id="yellow-in-black" class="btn btn col-1 m-5 fs-6 p-2" style="margin-left: 500;">See All Offers</button>
         </div>
 
         <!-- Section-7 -->
@@ -289,17 +322,17 @@
     <div style="width: 100%; margin: 15%;"></div>
 
     <!-- Section-9 -->
-    <div class="row">
-        <h1 id="s9-h" class="fs-1 fw-bolder w-50">
+    <div class="row ">
+        <h1 id="s9-h" class="fs-2 fw-bolder w-50 text-center">
             Proudly Serving Boston
             & The Surrounding Area
         </h1>
     </div>
-    <div class="row m-5 border border-danger">
-        <div class="col-md-5 border border-danger">
-            <img class="w-50 m-5" src="public/s9-c1-img.PNG" alt="boston-map" />
+    <div class="row m-5">
+        <div class="col-md-5">
+            <img id="map_g" class="w-75 m-1 mt-4 mx-4" src="public/s9-c1-img.PNG" alt="boston-map" />
         </div>
-        <div class="col-md-7 p-5 border border-danger">
+        <div class="col-md-7 p-3">
             <p class="fs-3 fw-bolder">Our Service Area</p>
             <div class="col" style="display: flex;">
                 <ul>
@@ -372,7 +405,7 @@
         </div>
         <div class="col">
             <button id="black-in-yellow" class="btn btn rounded-pill fw-bolder" type="submit"><img class="tick"
-                src="public\tick_black.png" alt="tick" />Schedule Now</button>
+                    src="public\tick_black.png" alt="tick" />Schedule Now</button>
         </div>
 
     </div>
@@ -381,4 +414,4 @@
 
 </body>
 
-</html>Unsuited&Neurosis&Impatient&Mushiness&Comic5
+</html>

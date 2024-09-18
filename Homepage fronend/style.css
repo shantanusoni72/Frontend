@@ -10,7 +10,7 @@
 }
 
 .header-logo {
-    width: 40%;
+    height: auto;
 }
 
 .header-links {
@@ -18,7 +18,19 @@
 }
 
 #logo {
-    width: 25%;
+    width: 5%;
+    padding: 5%;
+    padding-left: 35px;
+}
+
+@media screen and (min-width: 500px) {
+    .header-logo {
+        width: 70%;
+    }
+
+    #logo {
+        width: 50%;
+    }
 }
 
 #header-list a {
@@ -49,23 +61,22 @@
     background-color: transparent;
 }
 
-#section-1 {
+/* #section-1 {
     display: flex;
-    font-weight: 500;
+    align-items: center;
     margin-bottom: 5%;
+    position: relative;
 }
 
-#section-1 h1 {
+#s1-content h1 {
     background-color: black;
     color: rgba(255, 255, 0, 0.897);
     width: fit-content;
     padding: 1.5%;
-    padding-left: 4%;
-    font-size: 66px;
-    padding-right: 4%;
-    font-weight: 900px;
-    margin-left: -2%;
     position: absolute;
+    font-size: 90px;
+    margin-top: -10%;
+    right:45%;
 }
 
 #s1-content {
@@ -97,6 +108,123 @@
 
 #s1-graphics {
     width: 50%;
+}
+
+#s1-graphics img {
+    width: 100%;
+} 
+
+@media screen and (max-width: 600px) {
+    #section-1 {
+        display: block;
+        flex-direction: column;
+    }
+
+    #s1-content {
+        width: 100%;
+    }
+
+    #s1-graphics {
+        width: 100%;
+    }
+
+    #section-1 h1 {
+        background-color: black;
+        color: rgba(255, 255, 0, 0.897);
+        width: fit-content;
+        padding: 3%;
+        padding-left: 2%;
+        font-size: 50px;
+        padding-right: 2%;
+        font-weight: 900px;
+        margin-left: 3%;
+        margin-top: 2%;
+        position: absolute;
+    }
+    
+    #s1-content {
+        width: 80%;
+        padding-top: 4%;
+        padding-left: 7%;
+        font-weight: 700;
+    }
+    
+    .blank {
+        margin-top: 28%;
+    }
+    
+    #s1-content p {
+        font-weight: 600;
+    }
+    
+    .p2 {
+        margin-top: 4%;
+        font-weight: 800;
+        font-size: medium;
+    }
+    
+    .p3 {
+        margin-top: 4%;
+        font-weight: 500;
+        font-size: small;
+    }
+    
+    #s1-graphics {
+        width: 100%;
+    }
+    
+    #s1-graphics img {
+        width: 100%;
+    }
+} */
+
+#s1-content {
+    padding: 5%;
+}
+.design{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
+
+#d1 {
+    width: 100%;
+    padding-left: 4%;
+
+}
+
+#s1-content h1 {
+    background-color: black;
+    color: #F9DF08;
+    width: fit-content;
+    font-size: 85px;
+    margin-right: -4%;
+    padding: 5px;
+}
+
+#s1-content-one {
+    margin-right: -4%;
+    padding: 5px;
+}
+
+#s1-content-one h1 {
+    background-color: black;
+    color: #F9DF08;
+    width: fit-content;
+    font-size: 85px;
+    margin-left: 85px;
+    padding: 25px;
+    margin-top: 2%;
+    position: absolute;
+}
+
+#image-h {
+    width: 100%;
+}
+
+#image-h img {
+    width: 100%;
 }
 
 #s1-graphics img {
@@ -174,6 +302,29 @@
     background-color: transparent;
 }
 
+#s2-r {
+    width: 100%;
+    height: 100%;
+    background-image: url("public/sec-2-bg.png");
+}
+
+#s2-c {
+    padding: 5%;
+}
+
+#s2-c p {
+    margin: 5%;
+    color: rgba(255, 255, 0, 0.897);;
+}
+
+#s2-c img {
+    margin-left: 5%;
+}
+
+#s2-c button {
+    margin: 5%;
+}
+
 /*#section-3 {
     display: flex;
     width: 100%;
@@ -234,25 +385,20 @@
     font-weight: 400;
 }
 
-#section-4 {
-    height: 100%;
-    position: relative;
-}
-
 #s4-r {
+    width: 100%;
+    height: 90%;
+    padding: 7%;
     position: relative;
+    background-image: url("public/sec-4.png");
 }
 
 .img-fluid {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
 #s4-c {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 24px;
     text-align: center;
 }
@@ -265,8 +411,8 @@
 
 #s4-c p {
     color: white;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
     text-align: left;
     font-family: Work Sans;
     font-size: medium;
@@ -275,6 +421,17 @@
 #s4-c button {
     border-color: transparent;
     text-align: left;
+}
+
+#vroom-r {
+    margin-top: -12%;
+    margin-left: 35%;
+    position: absolute;
+}
+
+#vroom img {
+    width: 100%;
+    margin-right: 50%;
 }
 
 #section-5 {
@@ -371,9 +528,20 @@
     height: 100%;
 }
 
+@media screen and (min-width: 600px) {
+   #s8-c2 img {
+    height: 90%;
+   } 
+}
+
 #s9-h {
-    text-align: center;
     margin-left: 25%;
+}
+
+@media screen and (min-width: 700px) {
+    #map_g {
+        width: 50px;
+    }
 }
 
 #footer {
