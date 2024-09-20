@@ -62,6 +62,13 @@
     color: black;
 }
 
+#yb-btn {
+    width: 50%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 3%; 
+}
+
 .tick {
     background-color: transparent;
 }
@@ -73,14 +80,12 @@
 .design {
     margin: 0;
     padding: 0;
-    display: flex;
     width: 100%;
 }
 
 #d1 {
     width: 100%;
     padding-left: 4%;
-
 }
 
 #s1-content h1 {
@@ -109,12 +114,13 @@
 }
 
 #image-h {
+    background-image: url("public/1S9A7314\ 1.png");
     width: 100%;
 }
 
-#image-h img {
+/* #image-h img {
     width: 100%;
-}
+} */
 
 #s1-graphics img {
     width: 100%;
@@ -197,7 +203,7 @@
     background-image: url("public/sec-2-bg.png");
 }
 
-#s2-c {
+#s2-r {
     padding: 5%;
 }
 
@@ -221,9 +227,7 @@
 }
 
 #s4-r {
-    width: 100%;
     height: 90%;
-    padding: 7%;
     position: relative;
     background-image: url("public/sec-4.png");
 }
@@ -235,7 +239,6 @@
 
 #s4-c h1 {
     color: #F9DF08;
-    font-family: Work Sans;
 }
 
 .position-sticky {
@@ -248,7 +251,6 @@
 
 #s4-c p {
     color: white;
-    font-family: Work Sans;
 } 
 
 #s4-c button {
@@ -263,7 +265,6 @@
 }
 
 #vroom img {
-    width: 100%;
     margin-right: 50%;
 }
 
@@ -288,14 +289,11 @@
     height: auto;
 }
 
-#s7-r {
-    height: auto;
-}
-
 #s7-c1 {
     background-image: url("public/s7-1.png");
+    background-size: cover;
     padding-top: 20%;
-    height: 500px;
+    height: 100%;
 }
 
 #s7-c1 h1 {
@@ -304,13 +302,13 @@
 
 #s7-c1 p {
     color: #F2F1EA;
-    padding-right: 40%;
 }
 
 #s7-c2 {
     background-image: url("public/s7-2.png");
+    background-size: cover;
     padding-top: 20%;
-    height: 500px;
+    height: 100%;
 }
 
 #s7-c2 h1 {
@@ -319,7 +317,6 @@
 
 #s7-c2 p {
     color: #F2F1EA;
-    padding-right: 40%;
 }
 
 #s8-r {
@@ -341,8 +338,6 @@
 }
 
 .text-center {
-    font-weight: 700;
-    font-size: 65px;
     font-family: Work Sans;
 }
 
@@ -355,6 +350,18 @@
     padding-top: 25%;
 }
 
+@media screen and (max-width:990px) {
+    #p2 {
+        padding-top: 15%;
+    }
+}
+
+@media screen and (max-width:700) {
+    #p2 {
+        padding-top: 25%;
+    }
+}
+
 #s8-c1 button {
     margin-left: 10%;
 }
@@ -363,10 +370,46 @@
     height: 100%;
 }
 
-@media screen and (min-width: 600px) {
-    #s8-c2 img {
+#s8-c2 {
+    background-image: url("public/sec-8.png");
+}
+
+@media screen and (max-width: 990px) {
+    /* #s8-c2 img {
         height: 90%;
+    } */
+     /* #s8-c2 {
+        height: 70%;
+        background-image: url("public/sec-8-small.png");
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+     }
+
+     #s8-c1 h1 {
+        background-color: black;
+        color: rgba(255, 255, 0, 0.897);
+        width: fit-content;
+        padding: 1.5%;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-top: -11%;
+        margin-bottom: 11%;
+        padding-bottom: 1%;
+        margin-left: 20%;
+        margin-right: 20%;
+        position: absolute;
     }
+
+    #s8-c1 p {
+        padding-left: 10%;
+        margin-top: 3%;
+        text-align: center;
+    }
+    
+    #p2 {
+        padding-top: 0%;
+    } */
 }
 
 #s9-h {
@@ -435,4 +478,12 @@
         margin-left: 15%;
     }
     
+}
+
+.fs-1 {
+    font-size: 75px !important
+}
+
+.fw-bold {
+    font-weight: 800px !important
 }
