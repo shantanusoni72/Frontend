@@ -72,27 +72,25 @@
         <!-- Divider -->
         <div style="width: 100%; margin: 9%;"></div>
 
-        <div class="row d-lg-flex d-block">
-            <div id="d1" class="col-6">
-                <div id="s1-content-one">
-                    <h1 class="fw-bolder">Day or night,</h1>
-                </div>
-                <div style="margin-top: 220px; padding-left: 120px;">
-                    <p class="p-1 fw-medium">when emergencies strike, we restore<br />
-                        the comfort and safety to your home.</p>
-                    <div class="p-1">
-                        <button id="yellow-in-black" class="btn btn rounded-pill" type="submit">Non-Emergency
-                            Service</button>
-                        <button id="black-in-yellow" class="btn btn rounded-pill" type="submit">Emergency
-                            Service</button>
-                    </div><br />
-                    <p class="p-1 fw-bolder" style="margin-top: 20px;">Peace of Mind. Clear Options.
-                        <br>5-Star Service. Industry Leading Guarantees.
+        <div class="row w-100">
+            <div id="s1-image" class="col-12 col-lg-6 p-5 order-lg-2"></div>
+            <div id="s1-col" class="col-12 col-lg-6 p-lg-5 p-0 order-lg-1 text-center text-lg-start">
+                <h1 id="s1-title" class="position-absolute">
+                    Day or night,
+                </h1>
+                <div id="s1-body" class="p-4">
+                    <p class="fw-medium mt-2">
+                        when emergencies strike, we restore the comfort and safety to your home.
+                    </p>
+                    <div class="mt-2">
+                        <button id="black-in-yellow" class="btn btn rounded-pill">Non-Emergency Services</button>
+                        <button id="yellow-in-black" class="btn btn rounded-pill">Emergency Services</button>
+                    </div>
+                    <p class="mt-4 fw-bolder">
+                        Peace of Mind. Clear Options.<br />
+                        5-Star Service. Industry Leading Guarantees.
                     </p>
                 </div>
-            </div>
-            <div id="image-h" class="col-6 border border-danger">
-                <!-- <img src="public\1S9A7314 1.png" alt="person-1" /> -->
             </div>
         </div>
 
@@ -109,8 +107,10 @@
                             professional, and thorough! Also cheerful
                             and helpful in a very stressful emergency situation.
                         </p><br />
-                        <img src="public/a.png" alt="rating" />
-                        <button id="black-in-white" class="btn btn rounded-pill fw-bolder">Read More</button>
+                        <div class="d-lg-flex d-block col-lg-10 col-5 border border-danger py-2 justify-content-center">
+                            <img src="public/a.png" alt="rating" />
+                            <button id="black-in-white" class="btn btn rounded-pill fw-bolder">Read More</button>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -120,8 +120,10 @@
                             professional, and thorough! Also cheerful
                             and helpful in a very stressful emergency situation.
                         </p><br />
-                        <img src="public/a.png" alt="rating" />
-                        <button id="black-in-white" class="btn btn rounded-pill fw-bolder">Read More</button>
+                        <div class="d-lg-flex d-block">
+                            <img src="public/a.png" alt="rating" />
+                            <button id="black-in-white" class="btn btn rounded-pill fw-bolder">Read More</button>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -131,8 +133,10 @@
                             professional, and thorough! Also cheerful
                             and helpful in a very stressful emergency situation.
                         </p><br />
-                        <img src="public/a.png" alt="rating" />
-                        <button id="black-in-white" class="btn btn rounded-pill fw-bolder">Read More</button>
+                        <div class="d-lg-flex d-block">
+                            <img src="public/a.png" alt="rating" />
+                            <button id="black-in-white" class="btn btn rounded-pill fw-bolder">Read More</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -223,24 +227,24 @@
             </div>
 
             <!-- Vroom Car -->
-            <div id="vroom-r" class="row justify-content-end">
-                <div id="vroom" class="col-9">
-                    <img class="w-100" src="public/vroom.png" alt="vroom beep" />
-                </div>
+            <div id="vroom-r" class="row justify-content-end border border-danger">
+                <!-- <div id="vroom" class="col-2 w-100 border border-primary"> -->
+                    <img class="w-75 border border-success" src="public/vroom.png" alt="vroom beep" />
+                <!-- </div> -->
             </div>
         </div>
 
         <!-- Divider -->
-        <div style="width: 100%; margin: 10%;"></div>
+        <div style="width: 100%; margin: 15%;"></div>
 
         <!-- Section-5 -->
         <div class="row text-center">
             <h1 class="fs-1 fw-bold"><b>Today's Offers</b></h1>
         </div>
         <div class="row">
-            <div class="col-md-6 align-items-end">
-                <div class="shadow-lg mx-5 p-2 col-10 rounded-3">
-                    <div id="oc-1" class="bg-light d-lg-flex d-block px-2 py-4">
+            <div id="card" class="col-lg-6">
+                <div class="shadow-md mx-5 p-2 col-10">
+                    <div id="oc-1" class="bg-light d-lg-flex d-block px-2 py-4 rounded-top-5">
                         <div class="icon">
                             <svg width="40" height="52" viewBox="0 0 40 52" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -258,13 +262,14 @@
                                     </clipPath>
                                 </defs>
                             </svg>
+
                         </div>
                         <div class="price fs-1 fw-bolder">
                             $59
                         </div>
                         <p class="px-5 fs-6 fw-bolder">Plumbing Repair Diagnostic + Immediate Dispatching</p>
                     </div>
-                    <div class="offer-details bg-warning p-5 px-5">
+                    <div class="offer-details bg-warning p-5 px-5 rounded-bottom-5">
                         <div class="original-price">
                             <span class="fs-6 fw-bolder">Original Price</span>
                             <span class="fs-6 fw-bolder">$99.00</span>
@@ -283,33 +288,56 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 align-items-end">
-                <div class="shadow-lg mx-5 p-2 col-10 rounded-3">
-                    <div id="oc-1" class="bg-light d-lg-flex d-block px-4 py-4">
+            <div id="card" class="col-lg-6 align-items-end">
+                <div class="shadow-md mx-5 p-2 col-10">
+                    <div id="oc-1" class="bg-light d-lg-flex d-block px-2 py-4 rounded-top-5">
                         <div class="icon">
-                            <svg width="40" height="52" viewBox="0 0 40 52" fill="none"
+                            <svg width="68" height="66" viewBox="0 0 68 66" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_4_127)">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M26.0247 3.91885C24.5726 1.15775 20.6025 1.15775 19.1504 3.91885L15.0463 11.7104L10.4789 20.383L7.53346 25.9719C6.02986 28.5332 5.16992 31.5094 5.16992 34.6855C5.16992 44.2495 12.966 52 22.5798 52C32.1936 52 39.9897 44.2495 39.9897 34.6855C39.9897 31.5094 39.1298 28.5281 37.6262 25.9719L34.6807 20.383L30.1133 11.7104L26.0093 3.91885H26.0247Z"
+                                <g clip-path="url(#clip0_4_114)">
+                                    <path
+                                        d="M37.6461 66C54.4101 66 68.0001 52.5232 68.0001 35.8986C68.0001 19.274 54.4101 5.79712 37.6461 5.79712C20.882 5.79712 7.29199 19.274 7.29199 35.8986C7.29199 52.5232 20.882 66 37.6461 66Z"
                                         fill="#FEDE09" />
                                     <path
-                                        d="M4.04784 24.2352L11.0149 10.9983M25.0005 10.9983L31.9675 24.2352M14.8202 3.76511C16.1694 1.20379 19.8511 1.20379 21.1951 3.76511L25.0005 10.9932L29.2332 19.0408L31.9624 24.2301C33.3578 26.607 34.156 29.3681 34.156 32.3187C34.156 41.1912 26.9263 48.3834 18.0077 48.3834C9.08904 48.3834 1.85938 41.1912 1.85938 32.3187C1.85938 29.3681 2.65752 26.607 4.05299 24.2301L6.78214 19.0408L11.0149 10.9932L14.8202 3.76511Z"
-                                        stroke="black" stroke-width="4.26165" />
+                                        d="M31.8789 52.2751C43.389 52.2751 52.7197 43.126 52.7197 31.84C52.7197 20.5539 43.389 11.4048 31.8789 11.4048C20.3688 11.4048 11.0381 20.5539 11.0381 31.84C11.0381 43.126 20.3688 52.2751 31.8789 52.2751Z"
+                                        stroke="black" stroke-width="3.62463" />
+                                    <path
+                                        d="M31.8789 43.5355C38.4665 43.5355 43.8067 38.2992 43.8067 31.8399C43.8067 25.3806 38.4665 20.1443 31.8789 20.1443C25.2914 20.1443 19.9512 25.3806 19.9512 31.8399C19.9512 38.2992 25.2914 43.5355 31.8789 43.5355Z"
+                                        stroke="black" stroke-width="3.62463" />
+                                    <path
+                                        d="M32.1755 61.0147C48.772 61.0147 62.226 47.8225 62.226 31.5491C62.226 15.2757 48.772 2.0835 32.1755 2.0835C15.5791 2.0835 2.125 15.2757 2.125 31.5491C2.125 47.8225 15.5791 61.0147 32.1755 61.0147Z"
+                                        stroke="black" stroke-width="3.62463" />
+                                    <path d="M61.881 30.6764H2.46289V33.5513H61.881V30.6764Z" fill="black" />
+                                    <path d="M61.881 30.6764H2.46289V33.5513H61.881V30.6764Z" fill="black" />
+                                    <path d="M34.2171 2.41492H31.2852V60.6765H34.2171V2.41492Z" fill="black" />
+                                    <path d="M34.2171 2.41492H31.2852V60.6765H34.2171V2.41492Z" fill="black" />
+                                    <path
+                                        d="M11.7968 10.3246L9.72363 12.3574L51.7386 53.5546L53.8117 51.5217L11.7968 10.3246Z"
+                                        fill="black" />
+                                    <path
+                                        d="M11.7968 10.3246L9.72363 12.3574L51.7386 53.5546L53.8117 51.5217L11.7968 10.3246Z"
+                                        fill="black" />
+                                    <path
+                                        d="M52.5511 10.3264L10.5361 51.5236L12.6093 53.5564L54.6242 12.3592L52.5511 10.3264Z"
+                                        fill="black" />
+                                    <path
+                                        d="M52.5511 10.3264L10.5361 51.5236L12.6093 53.5564L54.6242 12.3592L52.5511 10.3264Z"
+                                        fill="black" />
                                 </g>
                                 <defs>
-                                    <clipPath id="clip0_4_127">
-                                        <rect width="40" height="52" fill="white" />
+                                    <clipPath id="clip0_4_114">
+                                        <rect width="68" height="66" fill="white" />
                                     </clipPath>
                                 </defs>
                             </svg>
+
                         </div>
                         <div class="price fs-1 fw-bolder">
                             $59
                         </div>
-                        <p class="px-5 fs-6 fw-bolder">Plumbing Repair Diagnostic + Immediate Dispatching</p>
+                        <p class="px-5 fs-6 fw-bolder">Drain Clearing Diagnostic + Immediate Dispatching</p>
                     </div>
-                    <div class="offer-details bg-warning p-5 px-5">
+                    <div class="offer-details bg-warning p-5 px-5 rounded-bottom-5">
                         <div class="original-price">
                             <span class="fs-6 fw-bolder">Original Price</span>
                             <span class="fs-6 fw-bolder">$99.00</span>
@@ -328,21 +356,21 @@
                     </div>
                 </div>
             </div>
-            <div id="yb-btn" class="col-6 p-5">
-                <button id="yellow-in-black" class="btn btn fs-6 col-4 py-2 rounded-pill">See All Offers</button>
+            <div id="yb-btn" class="col-lg-6 col-10 p-5">
+                <button id="yellow-in-black" class="btn btn fs-6 py-2 rounded-pill">See All Offers</button>
             </div>
         </div>
 
         <!-- Section-7 -->
         <div id="s7-r" class="row mt-4 mb-4">
-            <div id="s7-c1" class="col-md px-5 pb-5 text-center text-md-start">
-                <h1 class="fs-3 fs-md-5 fw-bolder">Maintenance Plans</h1>
-                <p class="fs-5 fs-md-3 fw-medium pr-5">Keep Your Home In Top Shape With Our Annual Plans</p>
+            <div id="s7-c1" class="col-lg px-5 pb-5 text-center text-lg-start">
+                <h1 class="fs-3 fs-lg-5 fw-bolder">Maintenance Plans</h1>
+                <p class="fs-5 fs-lg-3 fw-medium pr-5">Keep Your Home In Top Shape With Our Annual Plans</p>
                 <button id="black-in-yellow" class="btn btn rounded-pill">Apply More</button>
             </div>
-            <div id="s7-c2" class="col-md px-5 pb-5 text-center text-md-start">
-                <h1 class="fs-3 fs-md-5 fw-bolder">Finance</h1>
-                <p class="fs-5 fs-md-3 fw-medium pr-5">Don’t Sweat It! Check Out Our Financing Options</p>
+            <div id="s7-c2" class="col-lg px-5 pb-5 text-center text-lg-start">
+                <h1 class="fs-3 fs-lg-5 fw-bolder">Finance</h1>
+                <p class="fs-5 fs-lg-3 fw-medium pr-5">Don’t Sweat It! Check Out Our Financing Options</p>
                 <button id="black-in-yellow" class="btn btn rounded-pill">Apply Now</button>
             </div>
         </div>
@@ -351,31 +379,28 @@
     <!-- Divider -->
     <div style="width: 100%; margin: 5%;"></div>
 
-    <!-- Section-8 -->
-    <div id="s8-r" class="row w-100">
-        <div id="s8-c1" class="col-lg-5 col-12 p-5 px-5 px-md-2 order-2 order-lg-1">
-            <!-- order-2 order-lg-1 -->
-            <h1 class="text-overlay fw-bolder">We're Hiring</h1>
-            <p id="p2" class="fs-2 px-5 fw-bolder">There’s Nothing Like Loving Your Job</p>
-            <p class="fs-5 px-5">
-                We believe in fostering an environment
-                where every employee is not just a part
-                of the team but an integral contributor
-                to our collective journey. A journey where
-                every employee's growth mirrors the
-                company's evolution.
-            </p>
-            <button id="black-in-yellow" class="btn btn mx-5 rounded-pill align-items-center">Join the team</button>
-        </div>
-        <div id="s8-c2" class="col-lg-7 order-1 order-lg-2 border-danger">
-            <!-- order-1 order-lg-2 -->
-            <!-- d-none d-lg-block -->
-            <!-- <img class="w-100" src="public/sec-8.png" alt="sec-" /> -->
+    <div class="row w-100">
+        <div id="s8-image" class="col-12 col-lg-6 p-5 order-lg-2"></div>
+        <div id="s8-col" class="col-12 col-lg-6 p-lg-5 p-0 order-lg-1 text-center text-lg-start">
+            <h1 id="s8-title" class="position-absolute">
+                We’re Hiring
+            </h1>
+            <div id="s8-body" class="p-4">
+                <p id="s8-body-subtitle" class="mt-2">
+                    There’s Nothing Like Loving Your Job
+                </p>
+                <p id="s8-body-paragraph" class="mt-4">
+                    We believe in fostering an environment where every employee is not just a part of the
+                    team but an integral contributor to our collective journey. A journey where every employee’s
+                    growth mirrors the company’s evolution.
+                </p>
+                <button id="black-in-yellow" class="btn btn fw-bold rounded-pill">Join The Team</button>
+            </div>
         </div>
     </div>
 
     <!-- Divider -->
-    <div style="width: 100%; margin: 15%;"></div>
+    <div style="width: 100%; margin: 5%;"></div>
 
     <!-- Section-9 -->
     <div class="row ">

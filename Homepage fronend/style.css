@@ -3,6 +3,7 @@
     padding: 0;
     font-family: Work Sans;
 }
+
 .container-fluid {
     background-color: #F2F1EA;
     font-family: Work Sans;
@@ -66,7 +67,7 @@
     width: 50%;
     margin-left: 40%;
     margin-right: 40%;
-    margin-top: 3%; 
+    margin-top: 3%;
 }
 
 .tick {
@@ -77,15 +78,82 @@
     padding: 5%;
 }
 
-.design {
+.d-block {
     margin: 0;
     padding: 0;
     width: 100%;
 }
 
-#d1 {
-    width: 100%;
-    padding-left: 4%;
+#s1-title {
+    margin-right: -12%;
+    background-color: black;
+    color: #F9DF08;
+    padding: 1%;
+    font-size: 100px;
+    font-weight: 800;
+}
+
+#s1-body {
+    margin-top: 25%;
+}
+
+#s1-image {
+    background-image: url(public/1S9A7314\ 1.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+@media screen and (max-width: 1200px) {
+    #s1-title {
+        margin-right: -12%;
+        padding: 1%;
+        font-size: 90px;
+        font-weight: 800;
+    }
+    
+    #s1-body {
+        margin-top: 30%;
+    }
+    
+    #s1-image {
+        background-image: url(public/1S9A7314\ 1.png);
+        background-size: cover;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #s1-title {
+        margin-inline: 10%;
+        margin-top: -7%;
+        font-size: 70px;
+        font-weight: 800;
+    }
+
+    #s1-body {
+        margin-top: 10%;
+    }
+
+    #s1-image {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #s1-title {
+        margin-inline: 10%;
+        margin-top: -7%;
+        font-size: 60px;
+        font-weight: 800;
+    }
+
+    #s1-body {
+        margin-top: 10%;
+    }
+
+    #s1-image {
+        height: 50vh;
+    }
 }
 
 #s1-content h1 {
@@ -115,6 +183,8 @@
 
 #image-h {
     background-image: url("public/1S9A7314\ 1.png");
+    background-size: cover;
+    height: 100%;
     width: 100%;
 }
 
@@ -251,7 +321,7 @@
 
 #s4-c p {
     color: white;
-} 
+}
 
 #s4-c button {
     border-color: transparent;
@@ -262,11 +332,25 @@
     margin-top: -12%;
     margin-left: 35%;
     position: absolute;
+    animation-name: vrooming;
+    animation-duration: 4s;
+}
+
+@keyframes vrooming {
+    0% {
+    right: 0;
+  }
+  100% {
+    right: 15%;
+  }
 }
 
 #vroom img {
-    margin-right: 50%;
+    /* margin-right: 50%; */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 
 #section-5 {
     padding: 10%;
@@ -274,6 +358,20 @@
 
 #oc-1 {
     height: 35%;
+}
+
+@media screen and (max-width: 990px) {
+    .icon {
+        margin-left: 45%;
+    }
+
+    .price {
+        margin-left: 45%;
+    }
+}
+
+#card {
+    height: fit-content;
 }
 
 .wrench {
@@ -319,97 +417,89 @@
     color: #F2F1EA;
 }
 
-#s8-r {
-    height: 80%;
-}
-
-#s8-c1 h1 {
+#s8-title {
+    margin-right: -12%;
     background-color: black;
-    color: rgba(255, 255, 0, 0.897);
-    width: fit-content;
-    padding: 1.5%;
+    color: #F9DF08;
+    padding: 1%;
     padding-left: 2%;
-    font-size: 80px;
-    padding-right: 2%;
-    margin-top: -2%;
-    padding-bottom: 2%;
-    margin-left: 2%;
-    position: absolute;
+    font-size: 100px;
+    font-weight: 800;
 }
 
-.text-center {
-    font-family: Work Sans;
+#s8-body {
+    margin-top: 25%;
 }
 
-#s8-c1 p {
-    padding-left: 10%;
-    margin-top: 5%;
+#s8-body-subtitle {
+    font-size: 45px;
+    font-weight: 800;
 }
 
-#p2 {
-    padding-top: 25%;
+#s8-body-paragraph {
+    font-size: 25px;
+    font-weight: 400;
 }
 
-@media screen and (max-width:990px) {
-    #p2 {
-        padding-top: 15%;
-    }
-}
-
-@media screen and (max-width:700) {
-    #p2 {
-        padding-top: 25%;
-    }
-}
-
-#s8-c1 button {
-    margin-left: 10%;
-}
-
-#s8-c2 img {
-    height: 100%;
-}
-
-#s8-c2 {
+#s8-image {
     background-image: url("public/sec-8.png");
+    background-size: cover;
+    height: 100vh;
 }
 
 @media screen and (max-width: 990px) {
-    /* #s8-c2 img {
-        height: 90%;
-    } */
-     /* #s8-c2 {
-        height: 70%;
-        background-image: url("public/sec-8-small.png");
+    #s8-title {
+        margin-inline: 25%;
+        margin-top: -5%;
+        font-size: 60px;
+        font-weight: 800;
+    }
+
+    #s8-body {
+        margin-top: 5%;
+    }
+
+    #s8-body-subtitle {
+        font-size: 45px;
+        font-weight: 800;
+    }
+
+    #s8-body-paragraph {
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    #s8-image {
+        background-image: url("public/sec-8.png");
         background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
-     }
+        height: 50vh;
+    }
+}
 
-     #s8-c1 h1 {
-        background-color: black;
-        color: rgba(255, 255, 0, 0.897);
-        width: fit-content;
-        padding: 1.5%;
-        padding-left: 2%;
-        padding-right: 2%;
-        margin-top: -11%;
-        margin-bottom: 11%;
-        padding-bottom: 1%;
-        margin-left: 20%;
-        margin-right: 20%;
-        position: absolute;
+@media screen and (max-width: 763px) {
+    #s8-title {
+        margin-inline: 25%;
+        margin-top: -5%;
+        font-size: 55px;
+        font-weight: 800;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #s8-title {
+        margin-inline: 10%;
+        margin-top: -7%;
+        font-size: 60px;
+        font-weight: 800;
     }
 
-    #s8-c1 p {
-        padding-left: 10%;
-        margin-top: 3%;
-        text-align: center;
+    #s8-body {
+        margin-top: 10%;
     }
-    
-    #p2 {
-        padding-top: 0%;
-    } */
+
+    #s8-image {
+        height: 50vh;
+    }
 }
 
 #s9-h {
@@ -428,7 +518,7 @@
         width: 70%;
         font-family: Work Sans;
     }
-    
+
     #map_g {
         width: 50px;
     }
@@ -456,7 +546,6 @@
 #black-in-white {
     background-color: white;
     color: black;
-    margin-left: 60%;
 }
 
 #cards {
@@ -477,7 +566,7 @@
     .col-md-12 {
         margin-left: 15%;
     }
-    
+
 }
 
 .fs-1 {
