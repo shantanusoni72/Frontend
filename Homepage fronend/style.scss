@@ -23,6 +23,9 @@ $h2-font-weight: 500;
 
 .container-fluid {
     background-color: $bg-color;
+    margin: 0%;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 // Buttons
@@ -32,10 +35,22 @@ $h2-font-weight: 500;
     color: $font-color-yellow;
 }
 
+#yellow-in-black:hover {
+    font-weight: 600;
+    background-color: $font-color-yellow;
+    color: black;
+}
+
 #black-in-yellow {
     font-weight: 600;
     background-color: $font-color-yellow;
     color: black;
+}
+
+#black-in-yellow:hover {
+    font-weight: 600;
+    background-color: black;
+    color: $font-color-yellow;
 }
 
 #yb-btn {
@@ -48,6 +63,25 @@ $h2-font-weight: 500;
 #black-in-white {
     background-color: white;
     color: black;
+}
+
+.scroll-down-section {
+    position: absolute;
+    padding-inline: 10%;
+
+    .scroll-link {
+        text-decoration: none;
+        color: black;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .scroll-line {
+        height: 100px;
+        width: 2px;
+        background-color: rgb(251, 255, 0);
+        margin-inline: 3%;
+    }
 }
 
 // Headers
@@ -69,11 +103,11 @@ $h2-font-weight: 500;
 }
 
 .header-logo {
-    width: 70%;
+    width: 60%;
     height: auto;
 
     #logo {
-        width: 50%;
+        width: 40%;
         padding: 5%;
         padding-left: 35px;
     }
@@ -93,9 +127,9 @@ $h2-font-weight: 500;
 #s1-title {
     background-color: black;
     color: $font-color-yellow;
-    padding: 1.5%;
-    padding-inline: 3%;
-    font-size: calc($h1-font-size + 20px);
+    padding: 0.3%;
+    padding-inline: 2%;
+    font-size: calc($h1-font-size + 25px);
     font-weight: $h1-font-weight;
 }
 
@@ -119,7 +153,7 @@ $h2-font-weight: 500;
 
     p {
         color: $font-color-yellow;
-        font-size: 50px;
+        font-size: 340.75%;
     }
 
     img {
@@ -143,12 +177,18 @@ $h2-font-weight: 500;
 
     div {
         .card {
-            width: 13em;
-            padding: 2%;
-            margin: 20px;
+            width: 14em;
+            padding-top: 4%;
+            padding-bottom: 4%;
+            padding-inline: 0%;
+            margin: 1.5px;
 
             img {
                 width: 50px;
+                height: auto;
+                vertical-align: middle;
+                display: inline-block;
+                margin-bottom: 7%;
             }
         }
     }
@@ -219,22 +259,38 @@ $h2-font-weight: 500;
 
         .inner-cart {
             .upper {
-                height: 30%;
-
-                .icon {
-                    margin-left: 0%;
-                }
+                height: 25%;
+                justify-content: center;
+                padding: 5%;
+                padding-inline: 10%;
 
                 .price {
-                    margin-left: 0%;
+                    margin-right: 5%;
+                }
+
+                p {
+                    font-weight: calc($h2-font-weight + 100);
+                    display: block;
                 }
             }
 
             .lower {
-                height: 55%;
-                // padding-inline: 18%;
-                // padding-top: 10%;
+                height: 65%;
                 background-color: $font-color-yellow;
+
+                div {
+                    padding-top: 5%;
+                    font-size: calc($h3-font-size - 2px);
+                    font-weight: calc($h2-font-weight + 100);
+                }
+
+                .final-price {
+                    span {
+                        font-size: calc($h1-font-size - 10px);
+                        font-weight: $h1-font-weight;
+                    }
+                }
+
                 hr {
                     width: 50%;
                     margin-left: 25%;
@@ -249,10 +305,13 @@ $h2-font-weight: 500;
     #s8-image {
         background-image: url("public/sec-8.png");
         background-size: cover;
+        width: 110vh;
         height: 100vh;
     }
 
     div {
+        padding: 15%;
+
         #s8-title {
             margin-right: -2%;
             background-color: black;
@@ -263,16 +322,16 @@ $h2-font-weight: 500;
         }
 
         #s8-body {
-            margin-top: 25%;
+            margin-top: 30%;
 
             #s8-body-subtitle {
-                font-size: 45px;
-                font-weight: 800;
+                font-size: calc($h2-font-size - 10px);
+                font-weight: $h1-font-weight;
             }
 
             #s8-body-paragraph {
-                font-size: 25px;
-                font-weight: 400;
+                font-size: $h3-font-size;
+                font-weight: $h2-font-weight;
             }
         }
     }
@@ -287,6 +346,7 @@ $h2-font-weight: 500;
         letter-spacing: -2px;
         width: 64%;
         font-family: $font-family;
+        margin-inline: 20%;
         text-align: center;
     }
 }
@@ -404,7 +464,7 @@ $h2-font-weight: 500;
             background-size: cover;
             height: 100vh;
         }
-    
+
         div {
             #s8-title {
                 margin-right: -2%;
@@ -414,15 +474,15 @@ $h2-font-weight: 500;
                 font-size: calc($h1-font-size + 10px);
                 font-weight: $h1-font-weight;
             }
-    
+
             #s8-body {
                 margin-top: 30%;
-    
+
                 #s8-body-subtitle {
                     font-size: calc($h2-font-size - 10px);
                     font-weight: $h1-font-weight;
                 }
-    
+
                 #s8-body-paragraph {
                     font-size: calc($h3-font-size - 0px);
                     font-weight: $h2-font-weight;
@@ -448,6 +508,7 @@ $h2-font-weight: 500;
         margin-top: -5%;
         font-size: $h1-font-size;
         font-weight: $h1-font-weight;
+        text-align: center;
     }
 
     .carousel-text {
@@ -568,7 +629,7 @@ $h2-font-weight: 500;
             background-size: cover;
             height: 50vh;
         }
-    
+
         div {
             #s8-title {
                 width: 80%;
@@ -580,15 +641,15 @@ $h2-font-weight: 500;
                 font-size: $h1-font-size;
                 font-weight: $h1-font-weight;
             }
-    
+
             #s8-body {
                 margin-top: 10%;
-    
+
                 #s8-body-subtitle {
                     font-size: calc($h2-font-size - 10px);
                     font-weight: $h1-font-weight;
                 }
-    
+
                 #s8-body-paragraph {
                     font-size: calc($h3-font-size - 0px);
                     font-weight: $h2-font-weight;
@@ -606,18 +667,18 @@ $h2-font-weight: 500;
             font-family: $font-family;
         }
     }
-    
+
     .section-9-content {
         div img {
             width: 50%;
         }
-    
+
         div {
             p {
                 font-size: calc($h2-font-size - 5px);
                 font-weight: $h1-font-weight;
             }
-    
+
             div ul li {
                 font-size: $h3-font-size;
             }
@@ -640,10 +701,12 @@ $h2-font-weight: 500;
         margin-top: -7%;
         font-size: $h2-font-size;
         font-weight: $h1-font-weight;
+        text-align: center;
     }
 
     #s1-body {
         margin-top: 10%;
+        text-align: center;
     }
 
     #s1-image {
@@ -766,7 +829,7 @@ $h2-font-weight: 500;
             background-size: cover;
             height: 50vh;
         }
-    
+
         div {
             #s8-title {
                 width: 80%;
@@ -778,15 +841,15 @@ $h2-font-weight: 500;
                 font-size: $h2-font-size;
                 font-weight: $h1-font-weight;
             }
-    
+
             #s8-body {
                 margin-top: 10%;
-    
+
                 #s8-body-subtitle {
                     font-size: calc($h2-font-size - 15px);
                     font-weight: $h1-font-weight;
                 }
-    
+
                 #s8-body-paragraph {
                     font-size: calc($h3-font-size - 0px);
                     font-weight: $h2-font-weight;
@@ -804,18 +867,18 @@ $h2-font-weight: 500;
             font-family: $font-family;
         }
     }
-    
+
     .section-9-content {
         div img {
             width: 60%;
         }
-    
+
         div {
             p {
                 font-size: calc($h2-font-size - 5px);
                 font-weight: $h1-font-weight;
             }
-    
+
             div ul li {
                 font-size: $h3-font-size;
             }
@@ -831,7 +894,7 @@ $h2-font-weight: 500;
         font-size: calc($h2-font-size - 10px);
         font-weight: $h1-font-weight;
     }
-    
+
     .carousel-text {
         height: 500px;
         padding: 3%;
@@ -950,7 +1013,7 @@ $h2-font-weight: 500;
             background-size: cover;
             height: 50vh;
         }
-    
+
         div {
             #s8-title {
                 width: 80%;
@@ -962,15 +1025,15 @@ $h2-font-weight: 500;
                 font-size: $h2-font-size;
                 font-weight: $h1-font-weight;
             }
-    
+
             #s8-body {
                 margin-top: 10%;
-    
+
                 #s8-body-subtitle {
                     font-size: calc($h2-font-size - 15px);
                     font-weight: $h1-font-weight;
                 }
-    
+
                 #s8-body-paragraph {
                     font-size: calc($h3-font-size - 0px);
                     font-weight: $h2-font-weight;
@@ -988,18 +1051,18 @@ $h2-font-weight: 500;
             font-family: $font-family;
         }
     }
-    
+
     .section-9-content {
         div img {
             width: 80%;
         }
-    
+
         div {
             p {
                 font-size: calc($h3-font-size + 5px);
                 font-weight: $h1-font-weight;
             }
-    
+
             div ul li {
                 font-size: calc($h3-font-size - 5px);
             }
@@ -1150,10 +1213,17 @@ $h2-font-weight: 500;
 
 #vroom-r {
     margin-top: -12%;
-    margin-left: 200px;
+    width: 100%;
+    justify-content: end;
     position: absolute;
     animation-name: vrooming;
     animation-duration: 3s;
+
+    img {
+        width: 35%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 @keyframes vrooming {
@@ -1168,11 +1238,6 @@ $h2-font-weight: 500;
     100% {
         right: 15%;
     }
-}
-
-#vroom img {
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #card {
@@ -1220,6 +1285,16 @@ $h2-font-weight: 500;
 
 #s7-c2 p {
     color: #F2F1EA;
+}
+
+#white-in-black {
+    background-color: black;
+    color: #F2F1EA;
+}
+
+#white-in-black:hover {
+    background-color: white;
+    color: black;
 }
 
 #footer {
