@@ -91,12 +91,12 @@ $h2-font-weight: 500;
 }
 
 #s1-title {
-    margin-right: -12%;
     background-color: black;
     color: $font-color-yellow;
-    padding: 1%;
-    font-size: calc($h1-font-size + 15px);
-    font-weight: 800;
+    padding: 1.5%;
+    padding-inline: 3%;
+    font-size: calc($h1-font-size + 20px);
+    font-weight: $h1-font-weight;
 }
 
 #s1-body {
@@ -184,6 +184,7 @@ $h2-font-weight: 500;
         height: 100%;
         position: relative;
         background-image: url("public/sec-4.png");
+        background-size: cover;
 
         #s4-c {
             h1 {
@@ -231,8 +232,8 @@ $h2-font-weight: 500;
 
             .lower {
                 height: 55%;
-                padding-inline: 18%;
-                padding-top: 10%;
+                // padding-inline: 18%;
+                // padding-top: 10%;
                 background-color: $font-color-yellow;
                 hr {
                     width: 50%;
@@ -310,9 +311,9 @@ $h2-font-weight: 500;
 // Screen - 1200px
 @media screen and (max-width: 1200px) {
     #s1-title {
-        margin-right: -12%;
         padding: 1%;
-        font-size: $h1-font-size;
+        padding-inline: 5%;
+        font-size: calc($h1-font-size - 5px);
         font-weight: $h1-font-weight;
     }
 
@@ -432,7 +433,7 @@ $h2-font-weight: 500;
 }
 
 // Screen - 990px
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 992px) {
     .header-logo {
         width: 70%;
 
@@ -625,7 +626,7 @@ $h2-font-weight: 500;
 }
 
 // Screen - 580px
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 768px) {
     .header-logo {
         width: 90%;
 
@@ -637,8 +638,8 @@ $h2-font-weight: 500;
     #s1-title {
         margin-inline: 10%;
         margin-top: -7%;
-        font-size: 60px;
-        font-weight: 800;
+        font-size: $h2-font-size;
+        font-weight: $h1-font-weight;
     }
 
     #s1-body {
@@ -720,9 +721,10 @@ $h2-font-weight: 500;
         height: 100%;
 
         #s4-r {
-            height: 100%;
+            height: 75%;
             position: relative;
             background-image: url("public/sec-4.png");
+            background-size: cover;
 
             #s4-c {
                 h1 {
@@ -822,7 +824,14 @@ $h2-font-weight: 500;
 }
 
 // Screen - 415px
-@media screen and (max-width:415px) {
+@media screen and (max-width:576px) {
+    #s1-title {
+        margin-inline: 10%;
+        margin-top: -7%;
+        font-size: calc($h2-font-size - 10px);
+        font-weight: $h1-font-weight;
+    }
+    
     .carousel-text {
         height: 500px;
         padding: 3%;
@@ -886,6 +895,34 @@ $h2-font-weight: 500;
             ul li {
                 font-size: calc($h3-font-size - 5px);
                 font-weight: $h2-font-weight;
+            }
+        }
+    }
+
+    .position-sticky {
+        height: 100%;
+
+        #s4-r {
+            height: 90%;
+            position: relative;
+            background-image: url("public/sec-4.png");
+            background-size: cover;
+
+            #s4-c {
+                h1 {
+                    font-size: calc($h1-font-size - 20px);
+                    color: $font-color-yellow;
+                }
+
+                p {
+                    font-size: calc($h3-font-size - 5px);
+                    color: white;
+                }
+
+                button {
+                    border-color: transparent;
+                    text-align: left;
+                }
             }
         }
     }
@@ -1113,7 +1150,7 @@ $h2-font-weight: 500;
 
 #vroom-r {
     margin-top: -12%;
-    margin-left: 35%;
+    margin-left: 200px;
     position: absolute;
     animation-name: vrooming;
     animation-duration: 3s;

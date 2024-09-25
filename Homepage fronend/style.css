@@ -69,11 +69,11 @@
 }
 
 #s1-title {
-  margin-right: -12%;
   background-color: black;
   color: #F9DF08;
-  padding: 1%;
-  font-size: 85px;
+  padding: 1.5%;
+  padding-inline: 3%;
+  font-size: 90px;
   font-weight: 800;
 }
 
@@ -144,6 +144,7 @@
   height: 100%;
   position: relative;
   background-image: url("public/sec-4.png");
+  background-size: cover;
 }
 .position-sticky #s4-r #s4-c h1 {
   font-size: 70px;
@@ -177,8 +178,6 @@
 }
 .section-5-content .cart .inner-cart .lower {
   height: 55%;
-  padding-inline: 18%;
-  padding-top: 10%;
   background-color: #F9DF08;
 }
 .section-5-content .cart .inner-cart .lower hr {
@@ -233,9 +232,9 @@
 
 @media screen and (max-width: 1200px) {
   #s1-title {
-    margin-right: -12%;
     padding: 1%;
-    font-size: 70px;
+    padding-inline: 5%;
+    font-size: 65px;
     font-weight: 800;
   }
   #s1-body {
@@ -326,7 +325,7 @@
     font-weight: 500;
   }
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 992px) {
   .header-logo {
     width: 70%;
   }
@@ -468,7 +467,7 @@
     font-size: 20px;
   }
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 768px) {
   .header-logo {
     width: 90%;
   }
@@ -478,7 +477,7 @@
   #s1-title {
     margin-inline: 10%;
     margin-top: -7%;
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 800;
   }
   #s1-body {
@@ -540,9 +539,10 @@
     height: 100%;
   }
   .position-sticky #s4-r {
-    height: 100%;
+    height: 75%;
     position: relative;
     background-image: url("public/sec-4.png");
+    background-size: cover;
   }
   .position-sticky #s4-r #s4-c h1 {
     font-size: 50px;
@@ -607,7 +607,13 @@
     font-size: 20px;
   }
 }
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 576px) {
+  #s1-title {
+    margin-inline: 10%;
+    margin-top: -7%;
+    font-size: 35px;
+    font-weight: 800;
+  }
   .carousel-text {
     height: 500px;
     padding: 3%;
@@ -655,6 +661,27 @@
   .section-3-content div ul li {
     font-size: 15px;
     font-weight: 500;
+  }
+  .position-sticky {
+    height: 100%;
+  }
+  .position-sticky #s4-r {
+    height: 90%;
+    position: relative;
+    background-image: url("public/sec-4.png");
+    background-size: cover;
+  }
+  .position-sticky #s4-r #s4-c h1 {
+    font-size: 50px;
+    color: #F9DF08;
+  }
+  .position-sticky #s4-r #s4-c p {
+    font-size: 15px;
+    color: white;
+  }
+  .position-sticky #s4-r #s4-c button {
+    border-color: transparent;
+    text-align: left;
   }
   .section-5-content .cart {
     height: 30em;
@@ -854,7 +881,7 @@
 
 #vroom-r {
   margin-top: -12%;
-  margin-left: 35%;
+  justify-content: end;
   position: absolute;
   animation-name: vrooming;
   animation-duration: 3s;
