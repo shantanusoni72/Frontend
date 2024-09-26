@@ -147,95 +147,128 @@
   margin-top: -8%;
 }
 #cards div .card {
-  width: 14em;
-  padding-top: 4%;
-  padding-bottom: 4%;
-  padding-inline: 0%;
-  margin: 1.5px;
+  width: 14.5em;
+  height: auto;
+  padding: 20px 10px 30px;
+  display: flex;
+  gap: 10px;
 }
 #cards div .card img {
-  width: 50px;
+  width: auto;
   height: auto;
   vertical-align: middle;
   display: inline-block;
-  margin-bottom: 7%;
+}
+#cards div .card h5 {
+  letter-spacing: -1px;
 }
 
 .section-3-title h1 {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 800;
+  word-spacing: -2px;
+  letter-spacing: -2px;
 }
 
-.section-3-content div h1 {
-  font-size: 45px;
-  font-weight: 800;
+.section-3-content .section-3-image img {
+  position: relative;
+  z-index: 2;
+  margin-bottom: -100px;
 }
-.section-3-content div ul li {
-  font-size: 20px;
+.section-3-content .section-3-sub-content {
+  padding: 5%;
+  margin-top: 0%;
+}
+.section-3-content .section-3-sub-content h1 {
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.section-3-content .section-3-sub-content ul {
+  margin-bottom: 20px;
+}
+.section-3-content .section-3-sub-content ul li {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 2;
+  margin-bottom: 2px;
+}
+.section-3-content .section-3-sub-content button {
+  padding: 8px;
+  width: 30%;
   font-weight: 500;
 }
 
-.position-sticky {
-  height: 100%;
-}
-.position-sticky #s4-r {
-  height: 100%;
+.section-4 #s4-r {
   position: relative;
   background-image: url("public/sec-4.png");
   background-size: cover;
 }
-.position-sticky #s4-r #s4-c h1 {
-  font-size: 70px;
+.section-4 #s4-r #s4-c {
+  padding-top: 7%;
+}
+.section-4 #s4-r #s4-c h1 {
+  line-height: 2em;
+  font-size: 60px;
+  font-weight: 800;
   color: #F9DF08;
 }
-.position-sticky #s4-r #s4-c p {
+.section-4 #s4-r #s4-c p {
   font-size: 20px;
+  font-weight: 450;
+  line-height: 1.5;
   color: white;
 }
-.position-sticky #s4-r #s4-c button {
+.section-4 #s4-r #s4-c button {
   border-color: transparent;
-  text-align: left;
+  text-align: center;
+  padding: 1%;
+  width: 12%;
 }
 
 .section-5-title h1 {
   font-size: 70px;
   font-weight: 800;
+  letter-spacing: -2;
 }
 
-.section-5-content .cart {
-  height: 40em;
+.section-5-content {
+  padding-inline: 5%;
 }
-.section-5-content .cart .inner-cart .upper {
-  height: 25%;
-  justify-content: center;
-  padding: 5%;
-  padding-inline: 10%;
+.section-5-content div .card {
+  width: 100%;
+  height: 105%;
 }
-.section-5-content .cart .inner-cart .upper .price {
-  margin-right: 5%;
+.section-5-content div .card .upper {
+  width: 100%;
+  height: 30%;
 }
-.section-5-content .cart .inner-cart .upper p {
+.section-5-content div .card .upper .price-tag {
+  width: 45%;
+  border: 1px solid orange;
+}
+.section-5-content div .card .upper .price-tag .price {
+  padding-inline: 50px;
+  padding-block: 45px;
+}
+.section-5-content div .card .upper p {
+  width: 55%;
   font-weight: 600;
-  display: block;
+  padding-block: 55px;
+  padding-inline: 13px;
+  width: 55%;
+  font-size: 19px;
 }
-.section-5-content .cart .inner-cart .lower {
-  height: 65%;
+.section-5-content div .card .lower {
+  width: 100%;
   background-color: #F9DF08;
-}
-.section-5-content .cart .inner-cart .lower div {
-  padding-top: 5%;
-  font-size: 18px;
-  font-weight: 600;
-}
-.section-5-content .cart .inner-cart .lower .final-price span {
-  font-size: 60px;
-  font-weight: 800;
-}
-.section-5-content .cart .inner-cart .lower hr {
-  width: 50%;
-  margin-left: 25%;
+  height: 70%;
 }
 
+.section-8 {
+  width: 100%;
+  padding-top: 4%;
+}
 .section-8 #s8-image {
   background-image: url("public/sec-8.png");
   background-size: cover;
@@ -246,23 +279,35 @@
   padding: 15%;
 }
 .section-8 div #s8-title {
-  margin-right: -2%;
+  margin-top: 1%;
+  margin-left: 50px;
   background-color: black;
   color: #F9DF08;
-  padding: 2%;
+  padding: 1%;
+  padding-inline: 2%;
   font-size: 85px;
+  letter-spacing: -3;
   font-weight: 800;
 }
 .section-8 div #s8-body {
   margin-top: 30%;
+  margin-left: 50px;
 }
 .section-8 div #s8-body #s8-body-subtitle {
-  font-size: 35px;
+  letter-spacing: -2;
+  line-height: 50px;
+  font-size: 40px;
   font-weight: 800;
 }
 .section-8 div #s8-body #s8-body-paragraph {
-  font-size: 20px;
+  width: 85%;
+  letter-spacing: -1;
+  font-size: 19px;
   font-weight: 500;
+}
+.section-8 div #s8-body button {
+  margin-left: -5%;
+  width: 45%;
 }
 
 .section-9-title h1 {
@@ -273,17 +318,68 @@
   font-family: Work Sans;
   margin-inline: 20%;
   text-align: center;
+  line-height: 97.5px;
 }
 
+.section-9-content {
+  margin-top: 3%;
+}
 .section-9-content div img {
-  width: 80%;
+  width: 96%;
+  padding: 20px;
 }
 .section-9-content div p {
   font-size: 40px;
   font-weight: 800;
+  letter-spacing: -2px;
+}
+.section-9-content div div {
+  width: 75%;
 }
 .section-9-content div div ul li {
   font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.section-9-content div button {
+  margin-top: 5%;
+  width: 30%;
+}
+
+#footer {
+  background-image: url("public/footer.png");
+  color: #F2F1EA;
+  padding-top: 64px;
+  padding-bottom: 80px;
+  padding-inline: 40px;
+  width: 100%;
+}
+#footer div {
+  justify-content: space-between;
+  padding-inline: 2%;
+}
+#footer div ul li {
+  line-height: 2.2;
+  font-size: 16px;
+  font-weight: 500;
+}
+#footer div ul li:hover {
+  color: #F9DF08;
+}
+#footer .footer-logo {
+  text-align: center;
+}
+#footer .footer-address {
+  color: #F9DF08;
+  width: 25%;
+  height: auto;
+}
+#footer .footer-address br {
+  margin-top: 5%;
+}
+#footer .footer-btn {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 @media screen and (max-width: 1200px) {
@@ -336,49 +432,140 @@
   #cards div .card img {
     width: 50px;
   }
-  .position-sticky {
-    height: 100%;
+  .section-3-title h1 {
+    font-size: 60px;
+    font-weight: 800;
+    word-spacing: -2px;
+    letter-spacing: -2px;
   }
-  .position-sticky #s4-r {
-    height: 90%;
+  .section-3-content .section-3-sub-content {
+    padding: 5%;
+    margin-top: -4%;
+  }
+  .section-3-content .section-3-sub-content h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  .section-3-content .section-3-sub-content ul {
+    margin-bottom: 15px;
+  }
+  .section-3-content .section-3-sub-content ul li {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2;
+    margin-bottom: 2px;
+  }
+  .section-3-content .section-3-sub-content button {
+    padding: 8px;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-weight: 500;
+  }
+  .section-4 {
+    height: 125vh;
+  }
+  .section-4 #s4-r {
+    height: 100%;
+    margin-top: -18%;
     position: relative;
     background-image: url("public/sec-4.png");
+    background-size: cover;
   }
-  .position-sticky #s4-r #s4-c h1 {
-    font-size: 70px;
+  .section-4 #s4-r #s4-c {
+    padding-top: 7%;
+  }
+  .section-4 #s4-r #s4-c h1 {
+    line-height: 2em;
+    font-size: 60px;
+    font-weight: 800;
     color: #F9DF08;
   }
-  .position-sticky #s4-r #s4-c p {
-    font-size: 18px;
+  .section-4 #s4-r #s4-c p {
+    font-size: 20px;
+    font-weight: 450;
+    line-height: 1.5;
     color: white;
   }
-  .position-sticky #s4-r #s4-c button {
+  .section-4 #s4-r #s4-c button {
     border-color: transparent;
-    text-align: left;
+    text-align: center;
+    padding: 1%;
+    margin-top: 2%;
+    width: 15%;
+  }
+  .section-8 {
+    width: 100%;
+    padding-top: 15%;
   }
   .section-8 #s8-image {
     background-image: url("public/sec-8.png");
     background-size: cover;
-    height: 100vh;
+    width: 100%;
+    height: auto;
+  }
+  .section-8 div {
+    padding: 1%;
   }
   .section-8 div #s8-title {
-    margin-right: -2%;
+    margin-top: 1%;
+    width: 95%;
     background-color: black;
     color: #F9DF08;
-    padding: 2%;
-    font-size: 80px;
+    padding: 1%;
+    padding-inline: 2%;
+    font-size: 85px;
+    letter-spacing: -3;
+    text-align: center;
     font-weight: 800;
   }
-  .section-8 div #s8-body {
-    margin-top: 30%;
-  }
   .section-8 div #s8-body #s8-body-subtitle {
-    font-size: 35px;
+    letter-spacing: -2;
+    line-height: 50px;
+    font-size: 40px;
     font-weight: 800;
   }
   .section-8 div #s8-body #s8-body-paragraph {
+    width: 95%;
+    letter-spacing: -1;
+    font-size: 19px;
+    font-weight: 500;
+  }
+  .section-8 div #s8-body button {
+    margin-inline-start: 40%;
+    width: 25%;
+  }
+  .section-9-title h1 {
+    font-weight: 800;
+    font-size: 60px;
+    letter-spacing: -2px;
+    width: 64%;
+    font-family: Work Sans;
+    margin-inline: 20%;
+    text-align: center;
+    line-height: 97.5px;
+  }
+  .section-9-content {
+    margin-top: 30%;
+  }
+  .section-9-content div img {
+    width: 100%;
+    padding: 5px;
+  }
+  .section-9-content div p {
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -2px;
+  }
+  .section-9-content div div ul li {
     font-size: 20px;
     font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .section-9-content div button {
+    margin-top: 1%;
+    font-size: 15px;
+    width: 30%;
   }
 }
 @media screen and (max-width: 992px) {
@@ -452,33 +639,61 @@
     font-size: 50px;
     font-weight: 800;
   }
-  .section-3-content div h1 {
+  .section-3-content .section-3-sub-content {
+    padding: 1%;
+    margin-top: 1%;
+  }
+  .section-3-content .section-3-sub-content h1 {
     font-size: 35px;
     font-weight: 800;
+    margin-bottom: 20px;
   }
-  .section-3-content div ul li {
-    font-size: 15px;
+  .section-3-content .section-3-sub-content ul {
+    margin-bottom: 15px;
+  }
+  .section-3-content .section-3-sub-content ul li {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2;
+    margin-bottom: 2px;
+  }
+  .section-3-content .section-3-sub-content button {
+    padding: 8px;
+    width: -moz-fit-content;
+    width: fit-content;
     font-weight: 500;
   }
-  .position-sticky {
-    height: 100%;
+  .section-4 {
+    height: 120vh;
   }
-  .position-sticky #s4-r {
-    height: 90%;
+  .section-4 #s4-r {
+    height: 100%;
+    margin-top: -35%;
     position: relative;
     background-image: url("public/sec-4.png");
+    background-size: cover;
   }
-  .position-sticky #s4-r #s4-c h1 {
+  .section-4 #s4-r #s4-c {
+    padding-top: 7%;
+  }
+  .section-4 #s4-r #s4-c h1 {
+    line-height: 2em;
     font-size: 60px;
+    font-weight: 800;
     color: #F9DF08;
   }
-  .position-sticky #s4-r #s4-c p {
-    font-size: 15px;
+  .section-4 #s4-r #s4-c p {
+    font-size: 20px;
+    font-weight: 450;
+    line-height: 1.5;
     color: white;
   }
-  .position-sticky #s4-r #s4-c button {
+  .section-4 #s4-r #s4-c button {
     border-color: transparent;
-    text-align: left;
+    text-align: center;
+    padding: 1%;
+    margin-top: 2%;
+    width: 15%;
   }
   .section-8 #s8-image {
     background-image: url("public/sec-8.png");
@@ -507,21 +722,39 @@
     font-weight: 500;
   }
   .section-9-title h1 {
-    margin-left: 15%;
-    font-weight: 700;
-    font-size: 60px;
-    width: 70%;
+    font-weight: 800;
+    font-size: 50px;
+    letter-spacing: -2px;
+    width: 67%;
     font-family: Work Sans;
+    margin-inline: 15%;
+    text-align: center;
+    line-height: 67.5px;
+  }
+  .section-9-content {
+    margin-top: 35%;
   }
   .section-9-content div img {
-    width: 50%;
+    width: 65%;
+    padding: 5px;
   }
   .section-9-content div p {
     font-size: 40px;
     font-weight: 800;
+    letter-spacing: -2px;
+  }
+  .section-9-content div div {
+    width: 82%;
   }
   .section-9-content div div ul li {
     font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .section-9-content div button {
+    margin-top: 1%;
+    font-size: 15px;
+    width: 25%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -583,36 +816,59 @@
     width: 50px;
   }
   .section-3-title h1 {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 800;
+    letter-spacing: -1px;
   }
-  .section-3-content div h1 {
-    font-size: 35px;
-    font-weight: 800;
+  .section-3-content .section-3-sub-content {
+    padding: 5%;
+    margin-top: 2%;
   }
-  .section-3-content div ul li {
-    font-size: 15px;
+  .section-3-content .section-3-sub-content h1 {
+    font-size: 32px;
+    font-weight: 550;
+    margin-bottom: 20px;
+  }
+  .section-3-content .section-3-sub-content ul {
+    margin-bottom: 25px;
+  }
+  .section-3-content .section-3-sub-content ul li {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2;
+    margin-bottom: 2px;
+  }
+  .section-3-content .section-3-sub-content button {
+    display: flex;
+    padding: 1%;
+    padding-left: 3%;
+    width: 20%;
     font-weight: 500;
   }
-  .position-sticky {
+  .section-4 {
     height: 100%;
+    margin-top: 40%;
   }
-  .position-sticky #s4-r {
-    height: 75%;
+  .section-4 #s4-r {
+    height: 95%;
     position: relative;
     background-image: url("public/sec-4.png");
     background-size: cover;
   }
-  .position-sticky #s4-r #s4-c h1 {
-    font-size: 50px;
+  .section-4 #s4-r #s4-c h1 {
+    font-size: 32px;
     color: #F9DF08;
+    margin-top: 7%;
   }
-  .position-sticky #s4-r #s4-c p {
+  .section-4 #s4-r #s4-c p {
     font-size: 15px;
+    padding-inline: 5%;
     color: white;
   }
-  .position-sticky #s4-r #s4-c button {
+  .section-4 #s4-r #s4-c button {
     border-color: transparent;
+    width: -moz-fit-content;
+    width: fit-content;
     text-align: left;
   }
   .section-5-title h1 {
@@ -622,48 +878,119 @@
   .section-5-content div div #oc-1 {
     height: 35%;
   }
+  .section-8 {
+    width: 100%;
+    padding-top: 15%;
+  }
   .section-8 #s8-image {
     background-image: url("public/sec-8.png");
     background-size: cover;
-    height: 50vh;
+    width: 100%;
+    height: auto;
+  }
+  .section-8 div {
+    padding: 1%;
   }
   .section-8 div #s8-title {
-    width: 80%;
-    margin-top: -5%;
-    margin-inline: 10%;
+    margin-top: 1%;
+    width: 95%;
     background-color: black;
     color: #F9DF08;
-    padding: 2%;
-    font-size: 45px;
+    padding: 1%;
+    padding-inline: 2%;
+    font-size: 32px;
+    letter-spacing: -3;
+    text-align: center;
     font-weight: 800;
   }
   .section-8 div #s8-body {
-    margin-top: 10%;
+    text-align: center;
   }
   .section-8 div #s8-body #s8-body-subtitle {
-    font-size: 30px;
+    letter-spacing: -1;
+    font-size: 23px;
     font-weight: 800;
   }
   .section-8 div #s8-body #s8-body-paragraph {
-    font-size: 20px;
+    width: 95%;
+    letter-spacing: 0;
+    font-size: 14.5px;
     font-weight: 500;
   }
+  .section-8 div #s8-body button {
+    margin-inline-start: 1%;
+    width: 25%;
+  }
   .section-9-title h1 {
-    margin-left: 15%;
-    font-weight: 700;
-    font-size: 45px;
-    width: 70%;
+    font-weight: 800;
+    font-size: 32px;
+    letter-spacing: -2px;
+    width: 90%;
     font-family: Work Sans;
+    margin-inline: 5%;
+    text-align: center;
+    line-height: 37.5px;
+  }
+  .section-9-content {
+    margin-top: 35%;
   }
   .section-9-content div img {
-    width: 60%;
+    width: 85%;
+    padding: 5px;
   }
   .section-9-content div p {
-    font-size: 40px;
+    font-size: 28px;
     font-weight: 800;
+    letter-spacing: -2px;
+  }
+  .section-9-content div div {
+    width: 82%;
   }
   .section-9-content div div ul li {
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .section-9-content div button {
+    margin-top: 1%;
+    font-size: 15px;
+    width: 25%;
+  }
+  #footer {
+    background-image: url("public/footer.png");
+    color: #F2F1EA;
+    padding-top: 64px;
+    padding-bottom: 80px;
+    padding-inline: 40px;
+    width: 100%;
+  }
+  #footer div {
+    width: 100%;
+    padding: 2%;
+  }
+  #footer div ul li {
+    line-height: 2.2;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  #footer div ul li:hover {
+    color: #F9DF08;
+  }
+  #footer .footer-logo {
+    width: 100%;
+    text-align: center;
+  }
+  #footer .footer-address {
+    color: #F9DF08;
+    width: 50%;
+    height: auto;
+  }
+  #footer .footer-address br {
+    margin-top: 5%;
+  }
+  #footer .footer-btn {
+    width: 100%;
+    text-align: center;
   }
 }
 @media screen and (max-width: 576px) {
@@ -709,37 +1036,56 @@
   #cards div .card img {
     width: 50px;
   }
-  .section-3-title h1 {
-    font-size: 40px;
-    font-weight: 800;
+  .section-3-content .section-3-sub-content {
+    padding: 5%;
+    margin-top: 2%;
   }
-  .section-3-content div h1 {
+  .section-3-content .section-3-sub-content h1 {
     font-size: 25px;
-    font-weight: 800;
+    font-weight: 550;
+    margin-bottom: 20px;
   }
-  .section-3-content div ul li {
-    font-size: 15px;
+  .section-3-content .section-3-sub-content ul {
+    margin-bottom: 25px;
+  }
+  .section-3-content .section-3-sub-content ul li {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2;
+    margin-bottom: 2px;
+  }
+  .section-3-content .section-3-sub-content button {
+    display: flex;
+    padding: 2%;
+    padding-left: 3%;
+    width: -moz-fit-content;
+    width: fit-content;
     font-weight: 500;
   }
-  .position-sticky {
+  .section-4 {
     height: 100%;
+    margin-top: 40%;
   }
-  .position-sticky #s4-r {
-    height: 90%;
+  .section-4 #s4-r {
+    height: 100%;
     position: relative;
     background-image: url("public/sec-4.png");
     background-size: cover;
   }
-  .position-sticky #s4-r #s4-c h1 {
-    font-size: 50px;
+  .section-4 #s4-r #s4-c h1 {
+    font-size: 32px;
     color: #F9DF08;
+    margin-top: 7%;
   }
-  .position-sticky #s4-r #s4-c p {
-    font-size: 15px;
+  .section-4 #s4-r #s4-c p {
+    font-size: 14.5px;
+    padding-inline: 5%;
     color: white;
   }
-  .position-sticky #s4-r #s4-c button {
+  .section-4 #s4-r #s4-c button {
     border-color: transparent;
+    width: -moz-fit-content;
+    width: fit-content;
     text-align: left;
   }
   .section-5-content .cart {
@@ -752,48 +1098,128 @@
   .section-5-content .cart .inner-cart .lower {
     height: 55%;
   }
+  .section-8 {
+    width: 100%;
+    padding-top: 15%;
+  }
   .section-8 #s8-image {
     background-image: url("public/sec-8.png");
     background-size: cover;
-    height: 50vh;
+    width: 100%;
+    height: 40vh;
+  }
+  .section-8 div {
+    padding: 1%;
   }
   .section-8 div #s8-title {
-    width: 80%;
-    margin-top: -5%;
-    margin-inline: 10%;
+    margin-top: -8%;
+    width: 90%;
     background-color: black;
     color: #F9DF08;
-    padding: 2%;
-    font-size: 45px;
+    padding: 4%;
+    padding-inline: 1%;
+    margin-inline: 5.5%;
+    font-size: 32px;
+    letter-spacing: -1;
+    text-align: center;
     font-weight: 800;
   }
   .section-8 div #s8-body {
-    margin-top: 10%;
+    margin-top: 2%;
+    margin-inline: -2%;
+    padding: 0%;
+    text-align: center;
   }
   .section-8 div #s8-body #s8-body-subtitle {
-    font-size: 30px;
+    letter-spacing: -1;
+    padding-top: 3%;
+    line-height: 30px;
+    font-size: 22px;
     font-weight: 800;
   }
   .section-8 div #s8-body #s8-body-paragraph {
-    font-size: 20px;
+    width: 80%;
+    margin-top: -4%;
+    margin-inline: 10%;
+    letter-spacing: 0;
+    font-size: 14.5px;
     font-weight: 500;
   }
+  .section-8 div #s8-body button {
+    margin-inline-start: 1%;
+    width: 40%;
+  }
   .section-9-title h1 {
-    margin-left: 5%;
-    font-weight: 700;
-    font-size: 35px;
-    width: 80%;
+    font-weight: 800;
+    font-size: 32px;
+    letter-spacing: -2px;
+    width: 90%;
     font-family: Work Sans;
+    margin-inline: 5%;
+    text-align: center;
+    line-height: 37.5px;
+  }
+  .section-9-content {
+    padding-top: 7%;
+    padding-bottom: 18%;
   }
   .section-9-content div img {
-    width: 80%;
+    width: 95%;
+    padding: 5px;
   }
   .section-9-content div p {
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 800;
+    letter-spacing: -2px;
+  }
+  .section-9-content div div {
+    width: 82%;
   }
   .section-9-content div div ul li {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .section-9-content div button {
+    margin-top: 1%;
     font-size: 15px;
+    width: 50%;
+  }
+  #footer {
+    background-image: url("public/footer.png");
+    color: #F2F1EA;
+    padding-top: 64px;
+    padding-bottom: 80px;
+    padding-inline: 40px;
+    width: 100%;
+  }
+  #footer div {
+    width: 100%;
+    padding: 2%;
+  }
+  #footer div ul li {
+    line-height: 2.2;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  #footer div ul li:hover {
+    color: #F9DF08;
+  }
+  #footer .footer-logo {
+    width: 100%;
+    text-align: center;
+  }
+  #footer .footer-address {
+    color: #F9DF08;
+    width: 100%;
+    height: auto;
+  }
+  #footer .footer-address br {
+    margin-top: 5%;
+  }
+  #footer .footer-btn {
+    width: 100%;
+    text-align: center;
   }
 }
 #s1-content h1 {
@@ -1019,11 +1445,6 @@
 #white-in-black:hover {
   background-color: white;
   color: black;
-}
-
-#footer {
-  background-image: url("public/footer.png");
-  color: #F2F1EA;
 }
 
 @media screen and (max-width: 992px) {
